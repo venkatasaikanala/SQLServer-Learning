@@ -1,0 +1,45 @@
+SQL---- SERVER
+
+
+SQL : Structure Query Language 
+
+the data will be stored in a structured way 
+
+dbms -- data base management system 
+
+-data store data in structure and unstructured way 
+- ex- filemaker,xml databases,microsoft access
+-it does not consist of relationships between data 
+
+RDBMS-
+
+- data stored in tables 
+- having the relation between the tables 
+--used for large databases 
+--ex: mysql,sqlserver,oracle etc 
+
+----ddl (data definition language)
+--focus on structure of the data 
+-(create, alter, drop, truncate,rename)
+
+
+
+---dml (data manupulation language )
+(insert, delete,update)
+
+
+
+
+
+-----constraints : Constraints are enforced the data how to be 
+
+-(primary key, foreign key constraint, check, unique, default, notnull)
+
+
+
+
+
+
+
+
+
