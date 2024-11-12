@@ -1,0 +1,68 @@
+Basic Query Questions
+Retrieve the names and job titles of all employees in the "Marketing" department.
+Find all employees whose salary is greater than 50,000.
+List all unique job titles in the employees table.
+Show a list of employees ordered by their hire date in descending order.
+Find the employees who joined in the year 2022.
+Intermediate Query Questions
+Count the number of employees in each department.
+Retrieve the average salary of each department.
+Display the names of employees along with their department names using a join.
+Find the departments that have more than 10 employees.
+Show all employees who don’t belong to any department (assume there may be employees without a department).
+Advanced Query Questions
+Find the employee with the highest salary in each department.
+Display the details of the employee(s) with the second-highest salary.
+Retrieve the top 5 highest-paid employees.
+Show all employees who have the same salary as another employee.
+List departments that have an average salary higher than the overall company average salary.
+Complex Query Questions
+Display the name and salary of employees who earn above the average salary in their department.
+Find employees who joined within the last six months.
+List all employees along with their manager’s name (assume a self-referencing manager_id column in the employees table).
+Retrieve the name and job title of employees who have been with the company for more than five years.
+Show all employees who work in the same department as "John Doe."
+
+
+
+
+answers :
+basic :
+select emp_name, Job_Title from Employee where department = 'Marketing'
+select emp_name from employee where salary>50000;
+
+select Distinct Job_titles  from Employee;
+
+select * from employee order by hiredate desc
+
+select * from emp_name from Employee Where year(Joined_Year) = 2022;
+
+select d.dept_name, e.count(employess) from department d join employee e on  e.deptid = d.deptid  group by d.dept_name;
+
+select d.dept_name ,avg(e.salary) from department d join employee e on d.deptid = e.deptid group by salary
+
+select e.emp_name, d.deptname from Employee join department on  e.deptid = d.dept.id 
+
+
+select d.deptname, count(e.empid)from department d join employee e on e.deptid=d.deptid group by d.deptname  having count(emp.id)<10;
+
+
+select Top 5 e.empname, emp_salary from empolyee group by e.salary;
+
+select e.emp_name, e. salary from employee where salary <(select avg(salary) from employee)
+
+select e.emp_name , m.name from employee e join manager m  on m.id = e.managerid 
+
+
+select emp.name from emptable where dept=( select depid  from employee where empname = 'JOHN Doe');
+
+
+
+select emp_name , emp_jobtitle from employee where hire-date> current_date - Interval 5 year ;
+
+
+
+
+
+
+
