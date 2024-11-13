@@ -1,0 +1,19 @@
+User Defined Functions in SQl 
+
+-In SQL User Defiend Functions that are allow you to create custom logic for processing the data 
+this User Defined Functions are created by the users and it contain any sql logic to suit specific needs 
+
+there are two types of user defined functions 
+
+1. scalar functions 
+
+2.table valued functions 
+
+
+Scalar Functions :
+these functions return only a single value like it int,string,bool etc 
+
+tabular functions :
+
+these functions return a table , which can be used as  a source in select statements 
+
