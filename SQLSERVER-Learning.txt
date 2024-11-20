@@ -36,10 +36,93 @@ RDBMS-
 -(primary key, foreign key constraint, check, unique, default, notnull)
 
 
+-------------------------------------------------
+stored procedure : in sql server stored procedure is a precompailed collection of one or more statements 
+that can execute in single unit 
+
+-------it means in stored procedure  a set of commands can stored in the  Db,  we can exceute the commands  any time we need 
+ without rewriting of the code 
+each time  
+
+
+-----------------------------------------------
+
+Joins :
+
+In Sql Joins are used to combain two or more tables based on the relation between them
+
+--inner join or join can join and return common values in the table 
+-- left join - can join the two table and return all rows from the left table and return common rows from right table 
+--right join -- can join  the two tables and return all rows from the right table and return common rows from the left table
+-- outer join -- can join the  two tables and return all the rows if there is a common in left or right table , if there is no match then it will return null 
+-- cross join -- can join the two tables and returns cartisian product of the two tables 
+
+
+_____________________________________________________________________________
+
+
+rules of creation of the tabel 
+1. atomic - means it is in normalization 
+2. non- pk fields in separate table 
+3.transactive dependencey-- 
+
+
+rules of queries :
+
+--satisfy ACID properties 
+a- actomicity -- it should be in normalize form 
+c- consistency - the data should be in consistent
+I- Isolation -- do one operation and after completion of that only proceed to next operation 
+D - Durability : the data should be durable for last until we change
+_____________________________________________________________________________ 
+
+-- == temp tables :
+the temp tables in SQL store the temporary data or some tables that are stored in temporary 
+
+there are 2 types of temp tables :
+
+-- 1. local temporary tables :
+
+this can be created using the #temp 
+
+- it can be accessed in the created session only 
+- once the session end then it will drop the temp table automatically 
+--2. Global temporary table :
+this can be created using ##temp 
+-- it can be accessed by any session when it is created 
+-- it cannot be drop automatically -- we can drop this using drop but after completion of the last session it can drop automatically 
+____________________________________________________________________________________________
+
+--== functions 
+
+functions allows us to create custom logic to process the data 
+in sql there are - built-in functions , user defined functions :
+
+-- user defined functions : creatd by the user and it will return a value
+- 1. scalar function :
+the scalar functions can return a single value
+
+--exampele ::
+
+create function _functionname (@paramerter data type)
+returns data type
+as
+begin
+
+-- logic--
+return 
+
+end 
+--------------------
+-- we can use the functions any where once created 
+----we can use it stored procedure , temp tables etc 
+--benifts of using these functions 
+-- code resualbity
+-- simplefy of code 
+-- modularity 
 
 
 
-
-
+-------------------------------------------------------------
 
 
