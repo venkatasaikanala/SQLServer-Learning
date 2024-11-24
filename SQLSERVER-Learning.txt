@@ -119,7 +119,7 @@ end
 --benifts of using these functions 
 -- code resualbity
 -- simplefy of code 
--- modularity 
+-- modularity
 
 
 
