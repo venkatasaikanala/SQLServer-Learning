@@ -1,6 +1,5 @@
 SQL---- SERVER
 
-
 SQL : Structure Query Language 
 
 the data will be stored in a structured way 
@@ -26,10 +25,6 @@ RDBMS-
 
 ---dml (data manupulation language )
 (insert, delete,update)
-
-
-
-
 
 -----constraints : Constraints are enforced the data how to be 
 
