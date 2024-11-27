@@ -1,4 +1,4 @@
-SQL---- SERVER
+SQLSERVER
 
 SQL : Structure Query Language 
 
