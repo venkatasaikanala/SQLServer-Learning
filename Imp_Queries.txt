@@ -4,7 +4,7 @@ Find all employees whose salary is greater than 50,000.
 List all unique job titles in the employees table.
 Show a list of employees ordered by their hire date in descending order.
 Find the employees who joined in the year 2022.
-Intermediate Query Questions
+Intermediate Query Questions 
 Count the number of employees in each department.
 Retrieve the average salary of each department.
 Display the names of employees along with their department names using a join.
